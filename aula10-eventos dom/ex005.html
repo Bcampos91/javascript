@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+    <style>
+        body{
+            background-color: rgb(133, 116, 206);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif 18 pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com DOM </h1>
+    <P>Aqui vai o Resultado</P>
+    <p>Aprendendo a usa o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //MARCA
+        let p1 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim: ' + p1.innerHTML)//transmite na tela o valor da variavel
+
+            //Por ID
+        //let d = document.getElementById('msg') 
+        //d.style.background = 'green'
+        //d.innerText = 'Estou Aguardando'
+
+        //Por NAME
+        //let d = document.getElementsByTagName ('msg')[0]//Busca a Tag Selecionada 'p',[0] quando eu tenho mais de 1 objeto no caso 'p';
+        //d.innerText = 'óla'
+
+        //let d = document.getElementsByClassName('msg')[0]//Busca a Tag Selecionada 'p',[0] quando eu tenho mais de 1 objeto no caso 'p';
+        //d.innerText = 'óla'
+
+        let d = document.querySelector('div#msg')//Mais usado
+        d.style.background = 'blue'
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

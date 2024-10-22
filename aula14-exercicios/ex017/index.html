@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Calculo de Tarifas</title>
+ <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <header>
+            <h1>Valor Da Passagem: R$ 2,50 </h1>
+            <p>Menores de 6 anos: grátis, tarifa zero;</p>
+            <P>Estudantes: 50% de desconto;</P>
+            <p>Idosos (60+): 30% de desconto;</p>
+            <p>Regular: tarifa normal.</p>
+    </header>
+    <div id = 'cab'>
+        <p>Qual sua Idade: <input type="number" name="idade" id="txti"</input><input type="button" value="Verificar" onclick="verificar()"></p>
+        <p>Você é Estudante : <input type="radio" name="est" id="s" checked>
+        <label for="sim">Sim</label>
+        <input type="radio" name="est" id="n" >
+        <label for="nao">Não</label></p>
+    
+    </div>
+    <div id = "res"></div>
+    
+</body>
+<script src="javascript.js"></script>
+</html>

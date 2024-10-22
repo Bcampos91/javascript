@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+body{
+    background-color: rgba(0, 255, 255, 0.459);
+    font: normal 15pt arial;
+    text-align: center;
+    
+
+
+}
+
+header{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to right,#0000,rgba(0, 0, 255, 0.473),rgba(0, 0, 255, 0.562),transparent);
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+
+}
+
+section > strong{
+    color: blue;
+
+}
+
+footer{
+    color: rgb(61, 10, 201);
+    text-align: center;
+}

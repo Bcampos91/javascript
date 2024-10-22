@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu País</title>
+</head>
+<body>
+    <h1>Qual Seu País Atual?</h1>
+    Qual sua Nacionalidade:<input type="name" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id = res></div>
+    <script>
+        function verificar(){
+            let br = 'Brasil'
+            let p  = document.querySelector('input#txtpais')
+            let res = document.querySelector('div#res')
+            res.innerHTML += ` <p>seu Pais é: <strong>${p.value}</strong></p>`//Para acessar o valor inserido no input, você deve usar a propriedade value do elemento.
+            //.value: permite que se tenha acesso aos dados e, assim, ele possa ser utilizado efetivamente.
+                if(p.value == br){
+                    res.innerHTML += 'Você é Brasileiro'
+                }else{
+                res.innerHTML += 'Você é Estrangeiro'
+                }
+        }
+    </script>
+
+
+    
+</body>
+</html>
